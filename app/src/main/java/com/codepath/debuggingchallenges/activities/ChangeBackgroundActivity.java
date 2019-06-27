@@ -3,7 +3,9 @@ package com.codepath.debuggingchallenges.activities;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.codepath.debuggingchallenges.R;
 
@@ -19,6 +21,8 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
 
     public void onGoClick(View view) {
         View mainView = findViewById(android.R.id.content);
+        // Illustrated to us that originally click didn't go through
+        // Log.i("Click", "Click worked!!");
         mainView.setBackgroundColor(getNextColor());
     }
 
